@@ -9,7 +9,7 @@ DPSleep Pipeline Step #7 (upact - Update Sleep Parameters after QC)
 ### Requirements
 - Make sure to run the "dpsleep-qcact" pipeline before this step
 - Run this step after doing Quality Control on "dpsleep-qcact" results and saving the .csv file with adding "_qcd" to the name
--The output is saved as a .csv file in mtl7 with all sleep parameters
+- The output is saved as a .csv file in mtl7 with all sleep parameters
 
 ### Installation
 
