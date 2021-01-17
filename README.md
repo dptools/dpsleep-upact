@@ -1,31 +1,23 @@
 DPSleep Pipeline Step #7 (upact - Update Sleep Parameters after QC)
 =========
-[![build status](https://ncfcode.rc.fas.harvard.edu/phoenix/upact/badges/master/build.svg)](https://ncfcode.rc.fas.harvard.edu/phoenix/upact/commits/master)
 
 ## Table of contents
 1. [Requirements](#requirements)
-2. [Usage examples](#usage-examples)
+2. [Installation](#installation)
+3. [Usage examples](#usage-examples)
 
 ### Requirements
-- Run this step after doing Quality Control and saving the csv file with adding "_qcd" to the name
-To run the upact pipeline, users may choose one of the following options:
+- Make sure to run the "dpsleep-qcact" pipeline before this step
+- Run this step after doing Quality Control on "dpsleep-qcact" results and saving the .csv file with adding "_qcd" to the name
+-The output is saved as a .csv file in mtl7 with all sleep parameters
 
-##### Option 1 - Installation
+### Installation
 
-To install Stopwatch on your system, run the following commands:
+To install dpsleep-upact on your system, run the following commands:
 ```bash
-git clone git@ncfcode.rc.fas.harvard.edu:phoenix/upact .
+git clone git@github.com:harvard-nrg/dpsleep-upact.git 
 cd upact
 pip install -r requirements.txt
-```
-
-##### Option 2 - Module Load (Within NCF only)
-
-To load UPACT module on NCF without an installation:
-```bash
-module load miniconda3
-module load matlab/R2017a-fasrc01
-module load upact/master-ncf
 ```
 
 ### Usage examples
